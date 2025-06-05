@@ -111,7 +111,7 @@ Columns like `Value`, `Wage`, and `Release Clause` had values like "€5M", "€
 
 #### Issue:
 
-Columns such as `WF` (Weak Foot), `SM` (Skill Moves), and `IR` (International Reputation) used star ratings (e.g., "4★").
+Column `IR` (International Reputation) used star ratings (e.g., "4★").
 
 
 <img width="960" alt="star ratings d" src="https://github.com/user-attachments/assets/e9fedd2e-f785-4c2e-bf5c-52d6a5a85570" />
@@ -155,19 +155,19 @@ Date columns like `Contract Valid Until` had mixed formats:
 
 #### Columns with Missing Values:
 
-* `Loan End Date`
-* `Hits`
+1. `Loan End Date`
+2. `Hits`
 
 #### Solution:
 
-* **Loan End Date**:
+1. **Loan End Date**:
 
   * Missing values indicated players **not currently on loan**.
   * **Filled with**: `"Not on loan"`
 
-  > **Validation**: This categorically defines player status and maintains analytical meaning.
+   **Validation**: This categorically defines player status and maintains analytical meaning.
 
-* **Hits**:
+2. **Hits**:
 
   * Missing likely means **no recorded popularity/hit data**.
   * **Filled with**: `"No hits"`
